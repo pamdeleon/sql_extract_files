@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<summaries>
+    <summary>
+        <name>SNBK</name>
+        <view>V1_SNCFBKG_SUMMARY</view>
+        <title>SNCF Rail Bookings</title>
+        <comment>Extracted from SNBK -SNCF Booking SAP -STS.doc, Section 3.1</comment>
+        <example>/ama/FCR/prddata/SAPFeeder/SAPFeederProcessed/SNBKSummaries_20181129</example>
+        <frequency>D</frequency>
+        <fields>
+            <field>
+                <index>0</index>
+                <fcrname>fixed(SNBK)</fcrname>
+                <sapname>Z3APDATTYP</sapname>
+                <type>string</type>
+                <length>4</length>
+                <comment>Application Data type = SNBK</comment>
+                <range>1:4</range>
+            </field>
+            <field>
+                <index>1</index>
+                <fcrname>IDSUMMARYID</fcrname>
+                <sapname>Z3SUMID</sapname>
+                <type>string</type>
+                <length>70</length>
+                <comment>Summary Id</comment>
+            </field>
+            <field>
+                <index>2</index>
+                <fcrname> DTPROCESSDATE</fcrname>
+                <sapname>Z3PROCDATE</sapname>
+                <type>date</type>
+                <length>8</length>
+                <comment>Processing Date</comment>
+            </field>
+            <field>
+                <index>3</index>
+                <fcrname> DTTRANSACTION</fcrname>
+                <sapname>Z3DATE</sapname>
+                <type>date</type>
+                <length>8</length>
+                <comment>Transaction Date</comment>
+            </field>
+            <field>
+                <index>4</index>
+                <fcrname>CDSGMNTCREOFFID</fcrname>
+                <sapname>Z3OFFID</sapname>
+                <type>string</type>
+                <length>9</length>
+                <comment>Creating Office</comment>
+            </field>
+            <field>
+                <index>5</index>
+                <fcrname> CDCURRENTOFFID     </fcrname>
+                <sapname>Z3OFFID2</sapname>
+                <type>string</type>
+                <length>9</length>
+                <comment>Current office</comment>
+            </field>
+            <field>
+                <index>6</index>
+                <fcrname>CDRAILSYSTEM</fcrname>
+                <sapname>Z3TPFPRVCD</sapname>
+                <type>string</type>
+                <length>3</length>
+                <comment>System provider IATA Code</comment>
+            </field>
+            <field>
+                <index>7</index>
+                <fcrname>CDACCESSTYPE</fcrname>
+                <sapname>Z3ACCTYPE</sapname>
+                <type>string</type>
+                <length>3</length>
+                <comment>Access type</comment>
+            </field>
+            <field>
+                <index>8</index>
+                <fcrname>CDACCESSPRODUCT</fcrname>
+                <sapname>Z3PRODUCT</sapname>
+                <type>string</type>
+                <length>3</length>
+                <comment>Product</comment>
+            </field>
+            <field>
+                <index>9</index>
+                <fcrname>CDACCESSSUBPRODUCT</fcrname>
+                <sapname>Z3SUBPROD</sapname>
+                <type>string</type>
+                <length>3</length>
+                <comment>Sub Product</comment>
+            </field>
+            <field>
+                <index>10</index>
+                <fcrname>CDCLASSDEVTYPE</fcrname>
+                <sapname>Z3DEVTYPE</sapname>
+                <type>string</type>
+                <length>2</length>
+                <comment>Device Type</comment>
+            </field>
+            <field>
+                <index>11</index>
+                <fcrname>counter(ADD)</fcrname>
+                <sapname>Z3COUNT01</sapname>
+                <type>number</type>
+                <length>10</length>
+                <comment>Add Bookings</comment>
+            </field>
+            <field>
+                <index>12</index>
+                <fcrname>counter(CANCEL)</fcrname>
+                <sapname>Z3COUNT02</sapname>
+                <type>number</type>
+                <length>10</length>
+                <comment>Cancel Bookings</comment>
+            </field>
+        </fields>
+    </summary>
+</summaries>
